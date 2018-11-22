@@ -1,0 +1,2 @@
+# Algorithm
+LeetCode for fun :)

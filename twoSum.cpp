@@ -1,3 +1,10 @@
+/*
+ * Test 1
+ * 该解法在 target 的值在数组中某两个和之间的情况下会无限循环，目前还没想到好的处理方法
+ * 时间复杂度可能是 O((n^2)/2)，相当于 O(n^2)
+ */
+
+#if 0
 class Solution {
 public:
     vector<int> twoSum(vector<int> & nums, int target)
@@ -41,3 +48,4 @@ public:
         return {};
     }
 };
+#endif

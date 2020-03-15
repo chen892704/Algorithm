@@ -1,6 +1,6 @@
 # Algorithm
 LeetCode for fun :)
-## Problems
+## LeetCode Problems
 
 
 ## 剑指 Offer

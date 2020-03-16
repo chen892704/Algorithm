@@ -2,6 +2,7 @@
 LeetCode for fun :)
 ### LeetCode Problems
 [695.岛屿的最大面积](https://github.com/chen892704/Algorithm/blob/master/LeetCode/695.%20%E5%B2%9B%E5%B1%BF%E7%9A%84%E6%9C%80%E5%A4%A7%E9%9D%A2%E7%A7%AF.md)
+[1160. 拼写单词](https://github.com/chen892704/Algorithm/blob/master/LeetCode/695.%20%E5%B2%9B%E5%B1%BF%E7%9A%84%E6%9C%80%E5%A4%A7%E9%9D%A2%E7%A7%AF.md)
 
 ### 剑指 Offer
 

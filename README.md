@@ -17,6 +17,8 @@ This Repo contains my solution ideas of [Leetcode](https://leetcode.com/) proble
 
 [Dynamic programming 动态规划](https://github.com/chen892704/Algorithm/tree/master/LeetCode/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)
 
+[Greedy 贪心算法](https://github.com/chen892704/Algorithm/tree/master/LeetCode/%E8%B4%AA%E5%BF%83)
+
 [Math 数学](https://github.com/chen892704/Algorithm/tree/master/LeetCode/%E6%95%B0%E5%AD%A6)
 
 [Design 设计](https://github.com/chen892704/Algorithm/tree/master/LeetCode/%E8%AE%BE%E8%AE%A1)

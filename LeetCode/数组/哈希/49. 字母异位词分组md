@@ -1,0 +1,56 @@
+﻿# 49. 字母异位词分组
+> 来源：力扣（LeetCode）
+链接：https://leetcode.cn/problems/group-anagrams/description/
+
+给你一个字符串数组，请你将 字母异位词 组合在一起。可以按任意顺序返回结果列表。
+
+*字母异位词是通过重新排列不同单词或短语的字母而形成的单词或短语，并使用所有原字母一次。*
+
+
+## 解题思路
+题目描述比较抽象, 实际为: 
+**把字母数量相同的字符串分到一组**
+示例：`["nat","tan"]` 都是一个`a`，一个`n`，一个`t`，所以分到一组。
+`["ate","eat","tea"]`都是一个`a`，一个`e`，一个`t`，所以分到一组
+
+解法：
+遍历数组，将每个单词以 a-z 重排序得到单词特征 (即所包含字母完全相同的单词), 用 map 统计特征和对应的原单词, 整理后输出结果
+
+## 代码实现
+时间复杂度 O(n)，空间复杂度 O(n)
+```cpp
+class Solution {
+public:
+    // 不知道 range::sort 先用 set 排序
+    // string getForm(string& str) {
+    //     set<char> st;
+    //     for (auto& ch : str) {
+    //         st.insert(ch);
+    //     }
+    //     string result = "";
+    //     for (auto &ch : st) {
+    //         result += ch;
+    //     }
+    //     return result;
+    // }
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        unordered_map<string, vector<string> > mp;
+        // 1. 遍历数组，将每个单词以 a-z 重排序
+        for (int i=0; i<strs.size(); ++i) {
+            // 2. 用 map 统计序列号和对应的原单词
+            string &s = strs[i];
+            string sorted_str = s;
+            ranges::sort(sorted_str);
+            mp[sorted_str].push_back(s);
+        }
+        // 3. 整理 map 统计结果
+        vector<vector<string> > result;
+        result.reserve(mp.size());
+        for (auto &ele : mp) {
+            result.emplace_back(std::move(ele.second));
+        }
+        return result;
+    }
+};
+```
+
